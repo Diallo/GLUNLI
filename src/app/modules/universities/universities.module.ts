@@ -8,11 +8,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatInputModule} from '@angular/material/input';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
+import { UniversitiesMapComponent } from './components/universities-map/universities-map.component';
 
 
 
 @NgModule({
-  declarations: [SearchComponent],
+  declarations: [SearchComponent, UniversitiesMapComponent],
   imports: [
     CommonModule,
     UniversitiesRoutingModule,

@@ -1,18 +1,27 @@
-<div class="container">
 
-  <div id="content">
+<app-universities-map></app-universities-map>
 
-    <h1>Select Destination University</h1>
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <mat-label>Destination University</mat-label>
-    <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
-    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
-      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-        {{option.name}}
-      </mat-option>
-    </mat-autocomplete>
-  </mat-form-field>
-</form>
-  </div>
-</div>
+
+
+<!--<mat-grid-list cols="2" rowHeight="1:1">-->
+
+<!--  <mat-grid-tile><div class="container">-->
+
+<!--    <div id="content">-->
+
+<!--      <h1>Select Destination University</h1>-->
+<!--      <form class="example-form">-->
+<!--        <mat-form-field class="example-full-width">-->
+<!--          <mat-label>Destination University</mat-label>-->
+<!--          <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">-->
+<!--          <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">-->
+<!--            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">-->
+<!--              {{option.name}}-->
+<!--            </mat-option>-->
+<!--          </mat-autocomplete>-->
+<!--        </mat-form-field>-->
+<!--      </form>-->
+<!--    </div>-->
+<!--  </div></mat-grid-tile>-->
+<!--  <mat-grid-tile><app-universities-map></app-universities-map></mat-grid-tile>-->
+<!--</mat-grid-list>-->
