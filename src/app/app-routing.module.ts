@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SearchComponent } from './modules/universities/components/search/search.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/search', pathMatch: 'full' },
   { path: 'search', component: SearchComponent }
 ];
 
