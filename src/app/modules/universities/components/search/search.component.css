@@ -1,0 +1,70 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+
+/*aa*/
+html, body {
+  height:100%;
+  background-color: #666699;
+}
+
+.well {
+  background-color: #ffffee
+}
+
+#content {
+  padding: 25% 25% 5%;
+}
+
+.search-form {
+  border-radius: 30px 0 0 30px;
+}
+
+.input-group {
+  width:100%;
+}
+
+input-group-btn {
+  max-width:38px;
+}
+
+#search {
+  border: 1px;
+}
+
+.search-btn {
+  cursor:pointer;
+  border-radius: 0 30px 30px 0;
+  background-color:#fff;
+  color:#669;
+
+}
+
+.text-center {
+  color: #fff;
+}
