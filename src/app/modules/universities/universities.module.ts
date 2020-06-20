@@ -9,8 +9,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatInputModule} from '@angular/material/input';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { UniversitiesMapComponent } from './components/universities-map/universities-map.component';
-
-
+import {LeafletModule} from '@asymmetrik/ngx-leaflet';
+import {LeafletMarkerClusterModule} from '@asymmetrik/ngx-leaflet-markercluster';
 
 @NgModule({
   declarations: [SearchComponent, UniversitiesMapComponent],
@@ -22,9 +22,11 @@ import { UniversitiesMapComponent } from './components/universities-map/universi
     MatAutocompleteModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    LeafletModule,
+    LeafletMarkerClusterModule
   ],
-
+  bootstrap:[UniversitiesMapComponent]
 
 
 })

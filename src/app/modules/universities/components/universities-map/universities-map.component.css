@@ -1,7 +1,29 @@
-#map {
-  position: absolute;
+/*#map {*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 100%*/
+/*}*/
+/*.leaflet-control-zoom.leaflet-bar.leaflet-control {*/
+/*  position: fixed;*/
+/*  left: 10%;*/
+/*  bottom: 10px;*/
+/*}*/
+
+.map-container {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%
+  right: 0;
+  bottom: 0;
+}
+
+.map-frame {
+  width:100%;
+  height: 100%;
+}
+
+#map {
+  height: 100%;
 }
