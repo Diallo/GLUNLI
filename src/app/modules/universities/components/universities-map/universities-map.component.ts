@@ -54,8 +54,9 @@ export class UniversitiesMapComponent implements OnInit {
   markerClusterReady(group: L.MarkerClusterGroup) {
     this.markerClusterGroup = group;
   }
+
   mapReady(map: L.Map) {
-    map.addControl(L.control.zoom({ position: 'bottomright' }));
+    map.addControl(L.control.zoom({position: 'bottomright'}));
   }
 
   refreshData(): void {
@@ -76,7 +77,12 @@ export class UniversitiesMapComponent implements OnInit {
 
     const values = this.universityService.getUniversityCoordinates();
     for (const coordinates of values) {
-      data.push(L.marker([coordinates[0], coordinates[1]], {icon}));
+      const marker = L.marker([parseFloat(coordinates[4]), parseFloat(coordinates[5])], {icon});
+      marker.on('click', e => {
+        console.log(coordinates[0] + ' ' + coordinates[1]);
+      });
+      marker.bindPopup('Hi ' + coordinates[1]);
+      data.push(marker);
     }
 
 
